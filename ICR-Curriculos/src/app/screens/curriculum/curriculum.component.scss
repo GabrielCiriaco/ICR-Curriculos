@@ -1,0 +1,102 @@
+.toolbar {
+    height: 60px;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    mat-icon{color: var(--backgroundColor);}
+    .user-profile {
+      display: flex;
+      align-items: center;
+
+      .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+      }
+      
+      .user-info {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        span{color: var(--backgroundColor);}
+        
+      }
+    }
+  }
+
+  ::ng-deep mat-divider{
+    margin: 0 20px !important;
+    border-top-style: solid; 
+    border-top-color:  #5486bc !important;
+    border-top-width: var(--mat-divider-width, 3px) !important;
+}
+
+
+ ::ng-deep .mdc-text-field--focused .mdc-floating-label {
+    color: var(--textColor) !important;
+  }
+  ::ng-deep .mdc-text-field .mdc-floating-label {
+    color: var(--textColor)!important;
+  }
+  ::ng-deep .mdc-text-field .mdc-text-field__input {
+    color: var(--textColor)!important;
+  }
+  ::ng-deep .mdc-text-field .mdc-text-field__input::placeholder{
+    color: rgba(231, 233, 239, 0.3)!important;
+  
+  }
+  
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__leading,
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__notch,
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__trailing {
+    border-color: var(--primaryColor) !important;
+
+  }
+::ng-deep .mdc-notched-outline__notch{
+    border-left: 0px;
+    border-left:  var(--backgroundColor) !important;
+  }
+  
+  
+  ::ng-deep .mat-mdc-form-field {
+    --mdc-outlined-text-field-outline-width: 2px; /* Altere o valor aqui */
+    --mdc-outlined-text-field-container-shape: 12px; // ou 8px, 16px, etc.
+
+  }
+
+
+.curriculum{
+
+  .title{
+    text-align: center;
+    color: #2A4058;
+  }
+
+  .form-group{
+    padding: 40px;
+    h2{
+      color: #2A4058;
+    }
+  }
+
+
+  form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 4 colunas iguais
+    gap: 20px;
+
+    .col-span-1 { grid-column: span 1; }
+    .col-span-2 { grid-column: span 2; }
+    .col-span-3 { grid-column: span 3; }
+    .col-span-4 { grid-column: span 4; }    
+    
+  }
+}

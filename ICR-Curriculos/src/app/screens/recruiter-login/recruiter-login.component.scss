@@ -1,0 +1,91 @@
+.background {
+    display: flex;
+    height: 100vh; /* usa toda a altura da tela */
+    width: 100%;
+
+  }
+  
+  .image-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+  }
+
+  .logo {
+    width: 50vw;         /* 50% da largura da viewport */
+    max-width: 250px;    /* mas com um limite máximo */
+  }
+
+  .form-login {
+    background-color: var(--backgroundColor);
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  box-shadow: -6px 0 16px rgba(0, 0, 0, 0.4); /* sombra à esquerda */
+  
+  }
+  .form {
+    background-color: var(--backgroundColor);
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  
+  }
+  .title{
+    text-align: center;
+    color: var(--textColor);
+  }
+  ::ng-deep .mdc-text-field--focused .mdc-floating-label {
+    color: var(--textColor) !important;
+  }
+  ::ng-deep .mdc-text-field .mdc-floating-label {
+    color: var(--textColor)!important;
+  }
+  ::ng-deep .mdc-text-field .mdc-text-field__input {
+    color: var(--textColor)!important;
+  }
+  ::ng-deep .mdc-text-field .mdc-text-field__input::placeholder{
+    color: rgba(231, 233, 239, 0.3)!important;
+  
+  }
+  
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__leading,
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__notch,
+  ::ng-deep .mdc-text-field--outlined.mdc-text-field .mdc-notched-outline__trailing {
+    border-color: var(--primaryColor) !important;
+
+  }
+::ng-deep .mdc-notched-outline__notch{
+    border-left: 0px;
+    border-left:  var(--backgroundColor) !important;
+  }
+  
+  
+  ::ng-deep .mat-mdc-form-field {
+    --mdc-outlined-text-field-outline-width: 2px; /* Altere o valor aqui */
+    --mdc-outlined-text-field-container-shape: 12px; // ou 8px, 16px, etc.
+
+  }
+  mat-icon {
+    color: var(--textColor);
+  }
+  
+  .button-login {
+    width: 100%;
+    height: 50px;
+    align-self: center;
+    background-color: var(--secondaryColor) !important;
+    color: #fcfcfc !important;
+    border-radius: 12px; 
+    font-size: 20px;
+  }
+  
+  

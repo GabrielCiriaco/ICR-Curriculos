@@ -1,0 +1,30 @@
+<div class="background">
+    <div class="image-logo">
+        <img class="logo" src="ICRR-Logo.png" alt="Logo S.A.S" />
+    </div>
+    <div class="form-login">
+        <div>
+            <h1 class="title">Entrar no Sistema</h1>
+            <form [formGroup]="loginForm" class="form">
+                <mat-form-field appearance="outline">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput formControlName="userName" placeholder="Usuário" required="true" />
+                    <mat-icon matSuffix class="std_gray">person_outline</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput formControlName="password" [type]="hidePassword ? 'password' : 'text'"
+                        placeholder="Senha" required="true" />
+                    <mat-icon matSuffix class="std_gray" (click)="changeHidePassword()">
+                        {{ hidePassword ? "visibility_off" : "visibility" }}
+                    </mat-icon>
+                </mat-form-field>
+
+                <button (click)="login()"  mat-raised-button class="button-login" color="primary">
+                    Entrar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
